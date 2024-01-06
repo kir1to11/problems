@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dota 2</title>
+</head>
+<body>
+  <header>
+    <div class="header_line" style="background-color: #1a1919;">
+      <div class="logo">
+        <a href="./index.html"><img src="./images/dota2_logo.png" width="188px" height="40px"></a>
+      </div>
+      <nav>
+        <a class ="nav-item" href="./news.html">Новости</a>
+        <a class ="nav-item" style="border-bottom:3px solid #2c2c2c;" href="./quiz.html">Викторина</a>
+        <a class ="nav-item" href="./cybersport.html">Киберспорт</a>
+      </nav>
+    </div>
+    </header>
+    <main>
+  <div class="quiz" id="quiz">
+    <div class="quiz_box">
+      <div class="quiz_title">Хотите ли вы проверить свои знания по <br><b>Dota 2</b> и пройти короткую викторину</div>
+      <button class="quiz_start">Начать</button>
+      <div class="quiz_ans_box">
+        <div class="quiz_ans" onclick="checkAnswer(1)"><span id ="ans1"></span></div>
+        <div class="quiz_ans" onclick="checkAnswer(2)"><span id ="ans2"></span></div>
+        <div class="quiz_ans" onclick="checkAnswer(3)"><span id ="ans3"></span></div>
+        <div class="quiz_ans" onclick="checkAnswer(4)"><span id ="ans4"></span></div>
+      </div>
+      <div class="result-popup" style="display: none;">
+        <div class="result-text"></div>
+        <button class="next-btn">Дальше</button>
+      </div>
+    </div>
+  </div>
+</main>
+  <footer>
+    <div class="footer-content">
+      <div class="footer-section">
+        <h3>О нас</h3>
+        <p>Сайт посвященный игре Dota 2 - вашему источнику новостей, викторин и киберспортивных событий.</p>
+      </div>
+  
+      <div class="footer-section">
+        <h3>Ссылки</h3>
+        <ul>
+          <li><a href="./index.html">Главная</a></li>
+          <li><a href="./news.html">Новости</a></li>
+          <li><a href="./quiz.html">Викторина</a></li>
+          <li><a href="./cybersport.html">Киберспорт</a></li>
+        </ul>
+      </div>
+  
+      <div class="footer-section">
+        <h3>Поддержка</h3>
+        <p>Если у вас есть вопросы или предложения, свяжитесь с нами:</p>
+        <p>Email: support@dota2site.com</p>
+      </div>
+    </div>
+  
+    <div class="footer-bottom">
+      <p>&copy; 2024 Dota 2 Site. Все права защищены.</p>
+    </div>
+  </footer>
+  <script src="main.js"></script>
+</body>
+
+</html>
